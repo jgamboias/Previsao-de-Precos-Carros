@@ -11,4 +11,13 @@ Usando algoritmos de inteligência artificial, é possível com este script prev
       Utilizando alguns algortimos disponíveis no sklearn, para efeitos de comparação, este script irá treinar o algoritmo de forma a prever o preço.  
   - Por implementar: Inserindo todas as outras categorias, prever o preço. Apesar de apenas bastar um pouco de conhecimento de csv e alimentar o algorimtmo depois de treinado com todas as colunas preenchidas tirando a última. 
    
- 
+# Imports Necessários:
+  - webbroser
+  - requests
+  - BeautifulSoup /// bs4
+  - numpy
+  - pandas
+  - sklearn
+  - matplotlib (opcional, não utilizada ainda)
+  - seaborn (opcional, também para visualização)
+  - time
