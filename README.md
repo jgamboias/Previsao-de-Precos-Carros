@@ -9,6 +9,6 @@ Usando algoritmos de inteligência artificial, é possível com este script prev
       Colocar sempre no início do .csv o seguinte cabeçalho Marca,Modelo,Ano,Quilometros,Portas,Lugares,Mudancas,Preco
   - Previsão de Preços: 
       Utilizando alguns algortimos disponíveis no sklearn, para efeitos de comparação, este script irá treinar o algoritmo de forma a prever o preço.  
-   -Por implementar: Inserindo todas as outras categorias, prever o preço. Apesar de apenas bastar um pouco de conhecimento de csv e alimentar o algorimtmo depois de treinado com todas as colunas preenchidas tirando a última. 
+  - Por implementar: Inserindo todas as outras categorias, prever o preço. Apesar de apenas bastar um pouco de conhecimento de csv e alimentar o algorimtmo depois de treinado com todas as colunas preenchidas tirando a última. 
    
  
