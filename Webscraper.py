@@ -1,7 +1,7 @@
 #!python
 #Imports
 import time
-import webbrowser, requests, bs4
+import  requests, bs4
 #Variaveis
 marca=[]
 modelo=[]
@@ -16,13 +16,14 @@ precos=[]
 #Primeira página. Caso pretenda recomeçar, apenas troque este valor para
 #a última página visitada.
 pagina=1
-while pagina<=1100:
+while pagina<=3:
     destaques=requests.get('https://www.standvirtual.com/carros/?search%5Bfilter_enum_damaged%5D=0&page='+str(pagina)) #Permite a cada iteração visitar uma página diferente
     anunciosNaoProcessados=bs4.BeautifulSoup(destaques.text,"html.parser")
-    
+
+    print('teste')
     anuncios=anunciosNaoProcessados.findAll('a',"offer-item__photo-link") #Procura qualquer elemento "a" com o nome de classe descrito.
     
-    ficheiro=open('precos.csv','a') #Inicialização do ficheiro csv para guardar os dados
+    ficheiro=open('precos2.csv','a') #Inicialização do ficheiro csv para guardar os dados
     
     #Para cada link obtido em anuncios, retirar a informação prentendida de cada veículo.
     for i in range(len(anuncios)):
