@@ -22,7 +22,7 @@ pages_limit=pages_file.readline()
 
 while pagina<=int(pages_limit):
     try:
-        destaques=requests.get('https://www.standvirtual.com/carros/?search%5Bfilter_enum_damaged%5D=0&page='+str(pagina)) #Permite a cada iteração visitar uma página diferente
+        destaques=requests.get('https://www.standvirtual.com/carros/?search%5Border%5D=created_at%3Adesc&page='+str(pagina)) #Permite a cada iteração visitar uma página diferente
         anunciosNaoProcessados=bs4.BeautifulSoup(destaques.text,"html.parser")
 
         print('teste')
