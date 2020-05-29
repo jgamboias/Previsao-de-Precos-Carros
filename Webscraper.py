@@ -20,7 +20,7 @@ pagina=1
 pages_file = open('pages.txt','r')
 pages_limit=pages_file.readline()
 
-while pagina<=to_number(pages_limit):
+while pagina<=int(pages_limit):
     try:
         destaques=requests.get('https://www.standvirtual.com/carros/?search%5Bfilter_enum_damaged%5D=0&page='+str(pagina)) #Permite a cada iteração visitar uma página diferente
         anunciosNaoProcessados=bs4.BeautifulSoup(destaques.text,"html.parser")
